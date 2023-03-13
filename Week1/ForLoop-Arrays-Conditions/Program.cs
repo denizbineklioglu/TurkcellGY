@@ -59,3 +59,24 @@ for (; u < nums.Length; u++)
 }
 Console.WriteLine(u);
 
+//Leetcode Sıngle Number Çözümü
+int[] single = { 4, 1, 2, 1, 2 };
+int s = 0;
+for (; s < nums.Length; s++)
+{
+    int count = 0;
+    for (int j = 0; j < single.Length; j++)
+    {
+        if (single[s] == single[j])
+        {
+            count++;
+        }
+    }
+    if (count == 1)
+    {
+        break;
+    }
+}
+Console.WriteLine($"Single Number : {single[s]}");
+
+
