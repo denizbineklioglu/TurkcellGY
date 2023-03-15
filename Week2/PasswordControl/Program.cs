@@ -123,6 +123,9 @@
         /// <param name="password">Şifre</param>
         public static void PasswordControl(string password)
         {
+
+            //If'lerden arındırılacak,mümkünse switch case ile yapmayı deneyeceğim.
+
             if (IsPassword6Character(password))
             {
                 if (IsLetter(password) || IsDigit(password))
