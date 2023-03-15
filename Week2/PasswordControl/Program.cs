@@ -115,6 +115,12 @@
             return letter & digit & symbol;
         }
 
+
+
+        /// <summary>
+        /// Girilen şifreyi kontrol eder.
+        /// </summary>
+        /// <param name="password">Şifre</param>
         public static void PasswordControl(string password)
         {
             if (IsPassword6Character(password))
