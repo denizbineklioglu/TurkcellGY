@@ -4,16 +4,7 @@
     {
         static void Main(string[] args)
         {
-            /*
-                1. En az 6 karakter
-             *  2. Sadece harf ya da sadece sayı ise ZAYIF ya da sadece alfanümerik olmayan ise
-             *  3. Hem harf hem sayı ise ORTA
-             *  4. Hem sayı, hem harf hem de alfanümerik olmayan bir karakter varsa GÜÇLÜ şifre desin.
-             *  
-             *  İpucu: 
-             *  char(.)
-            */
-
+            
             Console.Write("Bir şifre giriniz: ");
             string password = Console.ReadLine();
 
