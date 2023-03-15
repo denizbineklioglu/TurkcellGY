@@ -17,31 +17,7 @@
             Console.Write("Bir şifre giriniz: ");
             string password = Console.ReadLine();
 
-            if (IsPassword6Character(password))
-            {
-                if (IsLetter(password) || IsDigit(password))
-                {
-                    Console.WriteLine("ZAYIF şifre");
-                }
-                else
-                {
-                    if (!IsLetterAndDigit(password))
-                    {
-                        if (IsLetterAndDigitAndAlfaNumeric(password))
-                        {
-                            Console.WriteLine("GÜÇLÜ şifre");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine("ORTA şifre.");
-                    }
-                }
-            }
-            else
-            {
-                Console.WriteLine("Şifre 6 karakterden az olamaz!");
-            }
+            PasswordControl(password);
 
 
             Console.ReadKey();
@@ -146,6 +122,35 @@
                 }
             }
             return letter & digit & symbol;
+        }
+
+        public static void PasswordControl(string password)
+        {
+            if (IsPassword6Character(password))
+            {
+                if (IsLetter(password) || IsDigit(password))
+                {
+                    Console.WriteLine("ZAYIF şifre");
+                }
+                else
+                {
+                    if (!IsLetterAndDigit(password))
+                    {
+                        if (IsLetterAndDigitAndAlfaNumeric(password))
+                        {
+                            Console.WriteLine("GÜÇLÜ şifre");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("ORTA şifre.");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Şifre 6 karakterden az olamaz!");
+            }
         }
     }
 }
