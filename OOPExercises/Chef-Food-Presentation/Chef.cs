@@ -8,7 +8,6 @@ namespace OOPExercises.Chef_Food_Presentation
 {
     public class Chef
     {
-
         public void Cook(Food food)
         {
             food.MakePresentation();

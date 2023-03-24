@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOPExercises.AbstractVSInterface.Scenario1
+namespace OOPExercises.AbstractVsInterface.Scenario1
 {
     public abstract class Company
     {
-        public abstract void Save(); 
+        public abstract void Save();
     }
 
-    public class Zara : Company , IWinStar
+    public class Zara : Company, IWinStar
     {
         public override void Save()
         {
@@ -34,7 +34,6 @@ namespace OOPExercises.AbstractVSInterface.Scenario1
 
     public interface IWinStar
     {
-        public void WinStar(); 
+        public void WinStar();
     }
-
 }

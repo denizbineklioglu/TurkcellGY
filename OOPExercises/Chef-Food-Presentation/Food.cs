@@ -9,7 +9,7 @@ namespace OOPExercises.Chef_Food_Presentation
     public class Food
     {
         public string Name { get; set; }
-        
+
         /*
             Method virtual ise, miras alan classlar 
             bu methodu ezebilir.
@@ -28,8 +28,8 @@ namespace OOPExercises.Chef_Food_Presentation
         }
     }
 
-    public class KuruFasulye:Food
+    public class KuruFasulye : Food
     {
-        
+
     }
 }

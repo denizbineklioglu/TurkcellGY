@@ -10,9 +10,3 @@ Chef chef = new Chef();
 
 chef.Cook(krf);
 chef.Cook(baklava);
-
-
-
-
-
-

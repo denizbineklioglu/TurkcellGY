@@ -46,4 +46,3 @@ Console.WriteLine($"Toplamları: {sum}");
 //Ortalamaları
 double avg = (double)sum / (double)numbers.Length;
 Console.WriteLine($"Ortalamaları: {avg}");
-

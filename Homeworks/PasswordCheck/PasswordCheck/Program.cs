@@ -1,10 +1,10 @@
-﻿namespace PasswordControl
+﻿namespace PasswordCheck
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
+
             Console.Write("Bir şifre giriniz: ");
             string password = Console.ReadLine();
 

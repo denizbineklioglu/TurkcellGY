@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
 using System.Collections;
 
 ArrayList words = new ArrayList
@@ -82,5 +83,4 @@ public class GenericPoint<T> where T : struct
     }
 
 }
-
 
