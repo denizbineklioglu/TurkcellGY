@@ -15,17 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "SolidPrinciple
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Homeworks", "Homeworks", "{319B0A5D-4DED-4E1F-B6C6-2E6730AB82CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForLoop-Arrays-Conditions", "Homeworks\ForLoop-Arrays-Conditions\ForLoop-Arrays-Conditions.csproj", "{E0C7DA97-B2AD-41C0-9F62-760FA58BBAEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForLoop-Arrays-Conditions", "Homeworks\ForLoop-Arrays-Conditions\ForLoop-Arrays-Conditions.csproj", "{E0C7DA97-B2AD-41C0-9F62-760FA58BBAEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhileLoop-Arrays-Conditions", "Homeworks\WhileLoop-Arrays-Conditions\WhileLoop-Arrays-Conditions.csproj", "{DB39B505-DBC1-47FA-8448-F378D07A397F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhileLoop-Arrays-Conditions", "Homeworks\WhileLoop-Arrays-Conditions\WhileLoop-Arrays-Conditions.csproj", "{DB39B505-DBC1-47FA-8448-F378D07A397F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordCheck", "Homeworks\PasswordCheck\PasswordCheck\PasswordCheck.csproj", "{19BF86D0-012B-487C-9066-C2E03F2A61E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PasswordCheck", "Homeworks\PasswordCheck\PasswordCheck\PasswordCheck.csproj", "{19BF86D0-012B-487C-9066-C2E03F2A61E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOPExercises", "OOPExercises\OOPExercises.csproj", "{0690C6F6-8A18-4614-B3E3-7D2B58E31C6E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericTypes", "GenericTypes\GenericTypes.csproj", "{1AE5FC8D-014E-41B6-8E6C-FF90D6BC4944}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullConcepts", "NullConcepts\NullConcepts.csproj", "{2A200998-1E98-44ED-A4A9-5D4F6A099968}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericInterfaces", "Homeworks\GenericInterfaces\GenericInterfaces.csproj", "{913DFD61-0109-4CAC-B33F-4DE84811645B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,18 +49,10 @@ Global
 		{19BF86D0-012B-487C-9066-C2E03F2A61E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19BF86D0-012B-487C-9066-C2E03F2A61E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19BF86D0-012B-487C-9066-C2E03F2A61E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0690C6F6-8A18-4614-B3E3-7D2B58E31C6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0690C6F6-8A18-4614-B3E3-7D2B58E31C6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0690C6F6-8A18-4614-B3E3-7D2B58E31C6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0690C6F6-8A18-4614-B3E3-7D2B58E31C6E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1AE5FC8D-014E-41B6-8E6C-FF90D6BC4944}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1AE5FC8D-014E-41B6-8E6C-FF90D6BC4944}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1AE5FC8D-014E-41B6-8E6C-FF90D6BC4944}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1AE5FC8D-014E-41B6-8E6C-FF90D6BC4944}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2A200998-1E98-44ED-A4A9-5D4F6A099968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2A200998-1E98-44ED-A4A9-5D4F6A099968}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2A200998-1E98-44ED-A4A9-5D4F6A099968}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2A200998-1E98-44ED-A4A9-5D4F6A099968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{913DFD61-0109-4CAC-B33F-4DE84811645B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{913DFD61-0109-4CAC-B33F-4DE84811645B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{913DFD61-0109-4CAC-B33F-4DE84811645B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{913DFD61-0109-4CAC-B33F-4DE84811645B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +65,7 @@ Global
 		{E0C7DA97-B2AD-41C0-9F62-760FA58BBAEF} = {319B0A5D-4DED-4E1F-B6C6-2E6730AB82CA}
 		{DB39B505-DBC1-47FA-8448-F378D07A397F} = {319B0A5D-4DED-4E1F-B6C6-2E6730AB82CA}
 		{19BF86D0-012B-487C-9066-C2E03F2A61E0} = {319B0A5D-4DED-4E1F-B6C6-2E6730AB82CA}
+		{913DFD61-0109-4CAC-B33F-4DE84811645B} = {319B0A5D-4DED-4E1F-B6C6-2E6730AB82CA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2036F327-EF42-4106-897A-B200A6760762}
