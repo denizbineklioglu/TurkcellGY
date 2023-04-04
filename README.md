@@ -1,2 +1,2 @@
-### Turkcell Geleceği Yazanlar Bootcamp
+### Turkcell Geleceği Yazanlar 
 
