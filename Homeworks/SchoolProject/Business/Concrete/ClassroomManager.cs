@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,6 +13,9 @@ namespace SchoolProject.Business.Concrete
     public class ClassroomManager : IClassroomService
     {
         private readonly List<Classroom> _classes;
+
+        ITeacherService _teacherService;
+        IStudentService _studentService;
 
         public ClassroomManager(List<Classroom> classrooms)
         {
@@ -94,6 +98,25 @@ namespace SchoolProject.Business.Concrete
             {
                 Console.WriteLine("Sınıf bulunamadı.");
             }
-        }        
+        } 
+        
+
+        public Classroom GetById(int id)
+        {
+            var result = _classes.Single(c => c.ID == id);
+            return result;
+        }
+
+        public void AddClasrroomInTeacher(Teacher teacher)
+        {
+            var teacherClass = teacher.TeacherGrade;
+            teacherClass.Teacher = teacher;
+        }
+
+        public void AddClassroomInStudent(Student student)
+        {
+            var studentClass = student.StudentGrade;
+            studentClass.Students.Add(student);
+        }
     }
 }

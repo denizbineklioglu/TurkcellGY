@@ -10,6 +10,6 @@ namespace SchoolProject.Entities
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string StudentGrade { get; set; }
+        public Classroom? StudentGrade { get; set; }
     }
 }

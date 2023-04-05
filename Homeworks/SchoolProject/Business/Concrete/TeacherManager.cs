@@ -40,6 +40,12 @@ namespace SchoolProject.Business.Concrete
             _teacherList.ToList().ForEach(c => Console.WriteLine($"{c.FirstName} {c.LastName}"));
         }
 
+        public Teacher GetById(int id)
+        {
+            var result = _teacherList.Single(t => t.ID == id);
+            return result;
+        }
+
         public bool IsTeacherThere(string firstName, string lastName)
         {
             var result = _teacherList.Where(t => t.FirstName == firstName && t.LastName == lastName);

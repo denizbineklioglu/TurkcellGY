@@ -11,5 +11,7 @@ namespace SchoolProject.Business.Abstract
     {
         bool IsClassThere(int? classID, string? className);
         int CountClassStudents(int? classID, string? className);
+        void AddClasrroomInTeacher(Teacher teacher);
+        void AddClassroomInStudent(Student student);
     }
 }

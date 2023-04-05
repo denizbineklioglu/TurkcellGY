@@ -9,5 +9,7 @@ namespace SchoolProject.Entities
     public class Classroom:Entity
     {
         public string Name { get; set; }
+        public List<Student> Students { get; set; }
+        public Teacher? Teacher { get; set; }        
     }
 }

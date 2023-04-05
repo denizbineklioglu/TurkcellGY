@@ -41,13 +41,15 @@ namespace SchoolProject.Business.Concrete
             _students.ToList().ForEach(c => Console.WriteLine($"{c.FirstName} {c.LastName}"));
         }
 
+        public Student GetById(int id)
+        {
+            var result = _students.Single(s => s.ID == id);
+            return result;
+        }
+
         public void GetStudentsInClass(string className)
         {
-            var result = _students.Where(s => s.StudentGrade == className);
-            if (result != null)
-            {
-                Console.WriteLine($"{className} sınıfındaki öğrenciler");
-            }
+           //
         }
 
         public bool IsStudentInClass(string firstName, string lastName)
