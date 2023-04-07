@@ -14,31 +14,12 @@ namespace SchoolProject.Business.Concrete
     {
         private readonly List<Classroom> _classes;
 
-        ITeacherService _teacherService;
-        IStudentService _studentService;
-
         public ClassroomManager(List<Classroom> classrooms)
         {
             _classes = classrooms;
         }
 
         public void Add(Classroom entity) => _classes.Add(entity);        
-
-        public int Count() => _classes.Count();
-
-        public int CountClassStudents(int? classID, string? className)
-        {
-            if (classID != null)
-            {
-                var result = _classes.Where(c => c.ID == classID).Count();
-                return result;
-            }
-            else
-            {
-                var result = _classes.Where(c => c.Name == className).Count();
-                return result;
-            }
-        }
 
         public void Delete(int id) 
         {
@@ -58,31 +39,16 @@ namespace SchoolProject.Business.Concrete
             _classes.ToList().ForEach(c => Console.WriteLine($"{c.Name}"));
         }
 
-        public bool IsClassThere(int? classID = null, string? className = null)
+        public bool IsClassThere(string className)
         {
-            if (classID != null)
+            var result = _classes.Single(c => c.Name == className);
+            if (result != null)
             {
-                var result = _classes.Where(c => c.ID == classID);
-                if (result != null)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return true;
             }
             else
             {
-                var result = _classes.Where(c => c.Name == className);
-                if (result != null)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
+                return false;
             }
         }
 
@@ -117,6 +83,45 @@ namespace SchoolProject.Business.Concrete
         {
             var studentClass = student.StudentGrade;
             studentClass.Students.Add(student);
+        }
+
+        public void FindClassStudents(string className)
+        {
+            var result = _classes.FirstOrDefault(c => c.Name == className);
+            if (result != null)
+            {
+                result.Students.ToList().ForEach(s => Console.WriteLine($"{s.FirstName} {s.LastName}"));
+            }
+            else
+            {
+                Console.WriteLine("Sınıf bulunamadı.");
+            }
+        }
+
+        public void ClassTeacher(string className)
+        {
+            var result = _classes.Single(c => c.Name == className);
+            if(result != null)
+            {
+                Console.WriteLine($"{className} adlı sınıfın rehber öğretmeni {result.Teacher.FirstName} {result.Teacher.LastName} ");
+            }
+            else
+            {
+                Console.WriteLine("Sınıf Bulunamadı.");
+            }
+        }
+
+        public Classroom GetByName(string className)
+        {
+            
+            var result = _classes.SingleOrDefault(c => c.Name == className);
+            if (result != null)
+            {
+                return result;
+            }
+                          
+            return null;
+                        
         }
     }
 }

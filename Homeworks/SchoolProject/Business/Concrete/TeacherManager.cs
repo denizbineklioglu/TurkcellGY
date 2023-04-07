@@ -17,10 +17,7 @@ namespace SchoolProject.Business.Concrete
             _teacherList = teachers;
         }
         public void Add(Teacher entity)
-        => _teacherList.Add(entity);
-
-        public int Count() => _teacherList.Count;
-        
+        => _teacherList.Add(entity);        
 
         public void Delete(int id)    
         {
@@ -59,12 +56,12 @@ namespace SchoolProject.Business.Concrete
             }
         }
 
-        public void TeacherClass(List<Teacher> teachers,int id)
+        public void TeacherClass(string name, string lastName)
         {
-            var result = teachers.Single(s => s.ID == id);
+            var result = _teacherList.Single(s => s.FirstName == name && s.LastName == lastName);
             if (result != null)
             {
-                Console.WriteLine($"{result.FirstName} {result.LastName} isimli öğretmen  {result.TeacherGrade} sınıfından sorumlu.");
+                Console.WriteLine($"{result.FirstName} {result.LastName} isimli öğretmen  {result.TeacherGrade.Name} sınıfından sorumlu.");
             }
             else
             {

@@ -9,9 +9,11 @@ namespace SchoolProject.Business.Abstract
 {
     public interface IClassroomService : IGenericService<Classroom>
     {
-        bool IsClassThere(int? classID, string? className);
-        int CountClassStudents(int? classID, string? className);
+        bool IsClassThere(string className);
         void AddClasrroomInTeacher(Teacher teacher);
         void AddClassroomInStudent(Student student);
+        void FindClassStudents(string className);
+        void ClassTeacher(string className);
+        Classroom GetByName(string className);
     }
 }

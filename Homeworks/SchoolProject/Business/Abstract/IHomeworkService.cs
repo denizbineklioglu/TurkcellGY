@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace SchoolProject.Business.Abstract
 {
-    public interface IStudentService : IGenericService<Student>
+    public interface IHomeworkService
     {
-        bool IsStudentInClass(string firstName, string lastName);
-        void StudentClass(string firstName, string lastName);
+        void SendHomework(Student student);
     }
 }

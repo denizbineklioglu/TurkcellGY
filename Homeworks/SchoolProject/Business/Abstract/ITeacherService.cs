@@ -9,7 +9,7 @@ namespace SchoolProject.Business.Abstract
 {
     public interface ITeacherService: IGenericService<Teacher>
     {
-        void TeacherClass(List<Teacher> teachers, int id);
+        void TeacherClass(string name, string lastName);
         bool IsTeacherThere(string firstName , string lastName);
     }
 }

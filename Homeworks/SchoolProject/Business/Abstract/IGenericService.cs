@@ -12,8 +12,6 @@ namespace SchoolProject.Business.Abstract
         void Delete(int id);
         void GetAll();
         void Update(T entity);
-        int Count();
-
         T GetById(int id);
     }
 }

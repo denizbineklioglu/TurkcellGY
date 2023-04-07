@@ -14,14 +14,11 @@ namespace SchoolProject.Business.Concrete
         private readonly List<Student> _students;
         public StudentManager(List<Student> students)
         {
-             _students = students;
+            _students = students;
         }
 
         public void Add(Student entity) => _students.Add(entity);
         
-
-        public int Count() => _students.Count;
-
 
         public void Delete(int id)
         {
@@ -32,7 +29,7 @@ namespace SchoolProject.Business.Concrete
             }
             else
             {
-                Console.WriteLine("Öğretmen Bulunamadı");
+                Console.WriteLine("Öğretmen Silinemedi.");
             }
         }
 
@@ -47,27 +44,26 @@ namespace SchoolProject.Business.Concrete
             return result;
         }
 
-        public void GetStudentsInClass(string className)
-        {
-           //
-        }
-
         public bool IsStudentInClass(string firstName, string lastName)
         {
-            var result = _students.Where(s => s.FirstName == firstName && s.LastName == lastName);
-            if (result != null)
-            {
+            var student = _students.FirstOrDefault(s => s.FirstName == firstName && s.LastName == lastName);
+            if (student != null)
                 return true;
+            else
+                return false;
+        }
+
+        public void StudentClass(string firstName, string lastName)
+        {
+            var student = _students.FirstOrDefault(s => s.FirstName == firstName && s.LastName == lastName);
+            if (student != null)
+            {
+                Console.WriteLine($"{student.FirstName} {student.LastName} adlı öğrencinin sınıfı {student.StudentGrade.Name}");
             }
             else
             {
-                return false;
+                Console.WriteLine("Öğrenci Bulunamadı.");
             }
-        }
-
-        public void SendHomework()
-        {
-            Console.WriteLine("Öğretmene ödev gönderildi.");
         }
 
         public void Update(Student entity)
