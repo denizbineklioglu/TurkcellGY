@@ -22,7 +22,7 @@ namespace SchoolProject.Business.Concrete
 
         public void Delete(int id)
         {
-            var student = _students.Single(t => t.ID == id);
+            var student = _students.SingleOrDefault(t => t.ID == id);
             if (student != null)
             {
                 _students.Remove(student);
@@ -68,7 +68,7 @@ namespace SchoolProject.Business.Concrete
 
         public void Update(Student entity)
         {
-            var oldStudent = _students.Single(t => t.ID == entity.ID);
+            var oldStudent = _students.SingleOrDefault(t => t.ID == entity.ID);
             if (oldStudent != null)
             {
                 _students.Remove(oldStudent);

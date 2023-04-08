@@ -58,7 +58,7 @@ namespace SchoolProject.Business.Concrete
 
         public void TeacherClass(string name, string lastName)
         {
-            var result = _teacherList.Single(s => s.FirstName == name && s.LastName == lastName);
+            var result = _teacherList.SingleOrDefault(s => s.FirstName == name && s.LastName == lastName);
             if (result != null)
             {
                 Console.WriteLine($"{result.FirstName} {result.LastName} isimli öğretmen  {result.TeacherGrade.Name} sınıfından sorumlu.");
@@ -71,7 +71,7 @@ namespace SchoolProject.Business.Concrete
 
         public void Update(Teacher entity)
         {
-            var oldTeacher = _teacherList.Single(t => t.ID == entity.ID);
+            var oldTeacher = _teacherList.SingleOrDefault(t => t.ID == entity.ID);
             if (oldTeacher != null)
             {
                 _teacherList.Remove(oldTeacher);

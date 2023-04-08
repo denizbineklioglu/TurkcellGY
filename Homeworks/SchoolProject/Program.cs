@@ -22,7 +22,7 @@ userFunctions.AddTeacherWithUser(teachers);
 
 while (true)
 {
-    Console.WriteLine("Sınıf işlemleri için 1, Öğrenci işlemleri için 2, Öğretmen işlemleri için 3, Çıkmak için -1' basın.");
+    Console.WriteLine("1- Sınıf İşlemleri\n2- Öğrenci işlemleri\n3- Öğretmen işlemleri\nÇıkmak için -1'e basın.");
     int response = int.Parse(Console.ReadLine());
     switch (response)
     {
@@ -30,7 +30,7 @@ while (true)
             Console.WriteLine("--------- SINIF İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("Sınıf adı sorgulamak için 1, Öğretmenini öğrenmek istediğiniz sınıfı sorgulamak için 2'ye, Sınıftaki öğrencileri listelemek için 3'e çıkmak için -1.");
+                Console.WriteLine("1- Sınıf adı sorgula\n2- Öğretmenini öğrenmek istediğiniz sınıfı sorgula\n3- Sınıftaki öğrencileri listele\nÇıkmak için -1.");
                 int classResponse = int.Parse(Console.ReadLine());
                 switch (classResponse)
                 {
@@ -39,7 +39,7 @@ while (true)
                         string className = Console.ReadLine();
                         if (classroomManager.IsClassThere(className))
                         {
-                            Console.WriteLine($"{className} adlı sınıf kayıtlarda bulunmaktadır.");
+                            Console.WriteLine($"{className} adlı sınıf kayıtlarda bulunmaktadır.");                            
                         }
                         else
                         {
@@ -71,7 +71,7 @@ while (true)
             Console.WriteLine("--------- ÖĞRENCİ İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("Öğrenci sorgulamak için 1, Öğrencinin hangi sınıfta olduğunu sorgulamak için 2, çıkmak için -1'e basın.");
+                Console.WriteLine("1- Öğrenci sorgula\n2- Öğrencinin hangi sınıfta olduğunu sorgula\nÇıkmak için -1'e basın.");
                 int studentResponse = int.Parse(Console.ReadLine());
                 switch (studentResponse)
                 {
@@ -109,7 +109,7 @@ while (true)
             Console.WriteLine("--------- ÖĞRETMEN İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("Öğretmen sorgulamak için 1, öğretmenin sınıfını sorgulamak için 2, çıkmak için -1'e basın.");
+                Console.WriteLine("1- Öğretmen Sorgula\n2- Öğretmen Sınıfı Sorgula\nÇıkmak için -1. ");
                 int teacherResponse = int.Parse(Console.ReadLine());
                 switch (teacherResponse)
                 {

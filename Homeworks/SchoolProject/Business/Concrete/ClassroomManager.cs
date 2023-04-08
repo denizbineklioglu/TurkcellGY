@@ -23,7 +23,7 @@ namespace SchoolProject.Business.Concrete
 
         public void Delete(int id) 
         {
-            var classroom = _classes.Single(t => t.ID == id);
+            var classroom = _classes.SingleOrDefault(t => t.ID == id);
             if (classroom != null)
             {
                 _classes.Remove(classroom);
@@ -41,7 +41,7 @@ namespace SchoolProject.Business.Concrete
 
         public bool IsClassThere(string className)
         {
-            var result = _classes.Single(c => c.Name == className);
+            var result = _classes.SingleOrDefault(c => c.Name == className);
             if (result != null)
             {
                 return true;
@@ -69,7 +69,7 @@ namespace SchoolProject.Business.Concrete
 
         public Classroom GetById(int id)
         {
-            var result = _classes.Single(c => c.ID == id);
+            var result = _classes.SingleOrDefault(c => c.ID == id);
             return result;
         }
 
@@ -100,7 +100,7 @@ namespace SchoolProject.Business.Concrete
 
         public void ClassTeacher(string className)
         {
-            var result = _classes.Single(c => c.Name == className);
+            var result = _classes.SingleOrDefault(c => c.Name == className);
             if(result != null)
             {
                 Console.WriteLine($"{className} adlı sınıfın rehber öğretmeni {result.Teacher.FirstName} {result.Teacher.LastName} ");
