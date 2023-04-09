@@ -17,7 +17,6 @@ userFunctions.AddClassWithUser(classrooms);
 userFunctions.AddStudentWithUser(students);
 userFunctions.AddTeacherWithUser(teachers);
 
-
 // Sadece sorgulama işlemlerini konsolda gösterdim. Arka planda silme,güncelleme işlemlemleri de mevcut.
 
 while (true)
@@ -30,7 +29,8 @@ while (true)
             Console.WriteLine("--------- SINIF İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("1- Sınıf adı sorgula\n2- Öğretmenini öğrenmek istediğiniz sınıfı sorgula\n3- Sınıftaki öğrencileri listele\nÇıkmak için -1.");
+                Console.WriteLine("1- Sınıf adı sorgula\n2- Öğretmenini öğrenmek istediğiniz sınıfı sorgula\n3- Sınıftaki öğrencileri listele\n" +
+                    "4-Sınıfları Listele\nÇıkmak için -1.");
                 int classResponse = int.Parse(Console.ReadLine());
                 switch (classResponse)
                 {
@@ -56,6 +56,10 @@ while (true)
                         string className3 = Console.ReadLine();
                         classroomManager.FindClassStudents(className3);
                         break;
+                    case 4:
+                        Console.WriteLine("Sistemdeki sınıflar: ");
+                        classroomManager.GetAll();
+                        break;
                     case -1:
                         break;
                     default:
@@ -71,7 +75,8 @@ while (true)
             Console.WriteLine("--------- ÖĞRENCİ İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("1- Öğrenci sorgula\n2- Öğrencinin hangi sınıfta olduğunu sorgula\nÇıkmak için -1'e basın.");
+                Console.WriteLine("1- Öğrenci sorgula\n2- Öğrencinin hangi sınıfta olduğunu sorgula\n" +
+                    "3-Öğrencileri Listele\nÇıkmak için -1'e basın.");
                 int studentResponse = int.Parse(Console.ReadLine());
                 switch (studentResponse)
                 {
@@ -96,6 +101,10 @@ while (true)
                         string studenLastName1 = Console.ReadLine();
                         studentManager.StudentClass(studentName1, studenLastName1);
                         break;
+                    case 3:
+                        Console.WriteLine("Sistemdeki Öğrenciler: ");
+                        studentManager.GetAll();
+                        break;
                     default:
                         break;
                 }
@@ -109,7 +118,8 @@ while (true)
             Console.WriteLine("--------- ÖĞRETMEN İŞLEMLERİ ---------");
             while (true)
             {
-                Console.WriteLine("1- Öğretmen Sorgula\n2- Öğretmen Sınıfı Sorgula\nÇıkmak için -1. ");
+                Console.WriteLine("1- Öğretmen Sorgula\n2- Öğretmen Sınıfı Sorgula\n" +
+                    "3-Öğretmenleri Listele\nÇıkmak için -1. ");
                 int teacherResponse = int.Parse(Console.ReadLine());
                 switch (teacherResponse)
                 {
@@ -134,6 +144,10 @@ while (true)
                         string teacherLastName1 = Console.ReadLine();
                         teacherManager.TeacherClass(teacherName1, teacherLastName1);
                         break;
+                    case 3:
+                        Console.WriteLine("Sistemdeki Öğretmenler: ");
+                        teacherManager.GetAll();
+                        break;
                     default:
                         break;  
                 }
@@ -148,7 +162,10 @@ while (true)
         default:
             break;
     }
-    
+    if (response == -1)
+    {
+        break;
+    }
 }
 
 

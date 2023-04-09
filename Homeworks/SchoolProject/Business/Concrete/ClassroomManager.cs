@@ -57,8 +57,8 @@ namespace SchoolProject.Business.Concrete
             var oldClass = _classes.Single(c => c.ID == entity.ID);
             if (oldClass != null)
             {
-                _classes.Remove(oldClass);
-                _classes.Add(entity);
+                oldClass.Name = entity.Name;
+                oldClass.Teacher = entity.Teacher;
             }
             else
             {

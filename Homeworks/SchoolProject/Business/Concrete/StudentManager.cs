@@ -71,8 +71,9 @@ namespace SchoolProject.Business.Concrete
             var oldStudent = _students.SingleOrDefault(t => t.ID == entity.ID);
             if (oldStudent != null)
             {
-                _students.Remove(oldStudent);
-                _students.Add(entity);
+                oldStudent.FirstName = entity.FirstName;
+                oldStudent.LastName = entity.LastName;  
+                oldStudent.StudentGrade = entity.StudentGrade;
             }
             else
             {

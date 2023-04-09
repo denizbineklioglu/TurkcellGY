@@ -74,8 +74,9 @@ namespace SchoolProject.Business.Concrete
             var oldTeacher = _teacherList.SingleOrDefault(t => t.ID == entity.ID);
             if (oldTeacher != null)
             {
-                _teacherList.Remove(oldTeacher);
-                _teacherList.Add(entity);
+                oldTeacher.FirstName = entity.FirstName;
+                oldTeacher.LastName = entity.LastName;
+                oldTeacher.TeacherGrade = entity.TeacherGrade;
             }
             else
             {
