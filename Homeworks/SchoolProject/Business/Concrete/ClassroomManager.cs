@@ -54,7 +54,7 @@ namespace SchoolProject.Business.Concrete
 
         public void Update(Classroom entity)
         {
-            var oldClass = _classes.Single(c => c.ID == entity.ID);
+            var oldClass = _classes.SingleOrDefault(c => c.ID == entity.ID);
             if (oldClass != null)
             {
                 oldClass.Name = entity.Name;

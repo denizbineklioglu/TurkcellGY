@@ -17,7 +17,7 @@ userFunctions.AddClassWithUser(classrooms);
 userFunctions.AddStudentWithUser(students);
 userFunctions.AddTeacherWithUser(teachers);
 
-// Sadece sorgulama işlemlerini konsolda gösterdim. Arka planda silme,güncelleme işlemlemleri de mevcut.
+// Sadece sorgulama işlemlerini konsolda gösterdim. Arka planda silme,güncelleme işlemleri de mevcut.
 
 while (true)
 {
