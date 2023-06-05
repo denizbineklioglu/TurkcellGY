@@ -35,7 +35,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise", "SolidPrinciples
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise", "SolidPrinciples\5- DIP\Exercise\Exercise.csproj", "{97E87ADC-85EB-44AA-AEA2-6A87FE1E2F54}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolProject", "Homeworks\SchoolProject\SchoolProject.csproj", "{6F57CC7C-9BEE-4936-A97F-E977F2FE0529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolProject", "Homeworks\SchoolProject\SchoolProject.csproj", "{6F57CC7C-9BEE-4936-A97F-E977F2FE0529}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HangFire", "HangFire", "{E094094C-FE9A-4E7E-BDB2-E934D514E66E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PKCE Flow", "PKCE Flow", "{B291C641-5D08-40CD-952B-A5259AC7C1D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
