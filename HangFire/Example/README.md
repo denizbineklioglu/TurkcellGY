@@ -46,10 +46,20 @@ Middleware'ini ekliyoruz. Bu sayede dashboardda arka plan işlemlerini görünt�
 <h3> Hangfire'ın otomatik oluşturduğu tablolar </h3>
 
 
+# Hangfire ile bir iş oluşturma
 
+Bunun için öncelikle job tipini belirlemeliyiz ve bunu Program.cs dosyamızda belirtebiliriz. 
 
+![Screenshot_5](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/515dd664-947d-4815-8b69-8d950825d435)
 
+Burada bir Recurring Job oluşturduk. Bu jon'ın metodu ise Job class'ı içerisinde bulunan DbJob adındaki metot. 
+En son parametrede gözüken sayılar ise bu jon'ın ne sıklıkla tekrarlayacağını belirleyen 'cron expression generator' dan üretildi. 
 
+Link --> https://crontab.cronhub.io
+Bu site sayesinde Hangfire'a belirleceğiniz sürenin kod karşılığını alabilirsiniz. 
 
+![Screenshot_6](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/b564bb05-6200-4211-8b61-87a077506fca)
+
+Bu işleme göre bizim işlemimiz her gün akşam 17:30'da çalışacak.
 
 
