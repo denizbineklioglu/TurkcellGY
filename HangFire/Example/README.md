@@ -54,9 +54,8 @@ Middleware'ini ekliyoruz. Bu sayede dashboardda arka plan işlemlerini görünt�
 
 Bunun için öncelikle job tipini belirlemeliyiz ve bunu Program.cs dosyamızda belirtebiliriz. 
 
-![Screenshot_5](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/515dd664-947d-4815-8b69-8d950825d435)
+![Screenshot_5](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/52dab388-0aa5-41eb-b69b-038c7b743ba9)
 
-Burada bir Recurring Job oluşturduk. Bu job'ın metodu ise Job class'ı içerisinde bulunan DbJob adındaki metot. 
 En son parametrede gözüken sayılar ise bu job'ın ne sıklıkla tekrarlayacağını belirleyen 'cron expression generator' dan üretildi. 
 
 Link --> https://crontab.cronhub.io
