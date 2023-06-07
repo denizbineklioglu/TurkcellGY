@@ -22,7 +22,11 @@ Oluşturulan arka plan işleri veritabanında tutulduğundan dolayı güvenlidir
 
 # Hangfire Kurulumu 
 
-Nuget Package Manager'dan Hangfire'ı indiriyoruz.
+Nuget Package Manager'dan 
+<h5>1- Hangfire</h5>  
+<h5>2- Hangfire.SqlServer</h5> 
+<h5>3- Microsoft.Data.SqlClient</h5>
+paketlerini indiriyoruz. <br><br>
 
 Hangfire'ın kendi tablolarını oluşturabilmesi için bizim bir veritabanı oluşturmamız gerekiyor. Bunu appsettings.json dosyasında ConnectionString'e yazıyoruz.
 Ardından Program.cs dosyasına gelip , build'den önce
