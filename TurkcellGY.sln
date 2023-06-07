@@ -43,7 +43,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PKCE Flow", "PKCE Flow", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example", "Example", "{5C20015F-FF53-417D-B265-4D3EC19AC925}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hangfire.Example", "HangFire\Example\Hangfire.Example\Hangfire.Example.csproj", "{266AFAA8-3616-44AF-979C-439D0BBFB62E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hangfire.Example", "HangFire\Example\Hangfire.Example\Hangfire.Example.csproj", "{266AFAA8-3616-44AF-979C-439D0BBFB62E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
