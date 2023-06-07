@@ -4,6 +4,19 @@
 Web, mobil veya masaüstü uygulamalarına yetkilendirme imkanı veren protokoldür. 
 Bu protokol kullanılarak kullanıcının hesabının belli bir kısmına veya tamamına erişim izni alırsınız ve bunu kendi uygulamanızdaki kullanabilirsiniz. 
 
+# OAuth 2'deki Roller
+ <h3>1- Resource Owner</h3>
+  
+ --İçerik sahibi olan uygulamadır. 
+  
+ <h3>2- Client Application</h3>
+--Resource owner'ın içeriğine erişme isteği gönderen ve erişen uygulamadır.
+<h3>3- Authorization Server</h3>
+--Client application denilen uygulamaya yetki veren sunuculardır.
+<h3>4- Resource Server</h3>
+--İçerik sahibinin içerikleri tuttuğu sunucudur. <br><br>
+
+# Çalışma Sırası 
 
 1- Uygulama kullanıcıdan yetki ister. <br>
 2- Eğer kullanıcı isteği onaylarsa yetki verilir. <br>
