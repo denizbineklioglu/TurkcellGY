@@ -60,7 +60,7 @@ Bu site sayesinde Hangfire'a belirleceğiniz sürenin kod karşılığını alab
 
 ![Screenshot_6](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/b564bb05-6200-4211-8b61-87a077506fca)
 
-Bu işleme göre bizim işlemimiz her gün akşam 17:30'da çalışacak.
+Buna göre bizim işlemimiz her gün akşam 17:30'da çalışacak.
 
 # Oluşturduğumuz işi Dashboard'da görüntüleme
 
