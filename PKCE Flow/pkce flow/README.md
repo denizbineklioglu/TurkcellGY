@@ -24,12 +24,12 @@ Bu yöntem, tarayıcılarda saklanan kullanıcı bilgilerini daha güvene almak 
 
 # Nasıl Çalışır ?
 
-1- Kullanıcı Oturum açar. 
-2- OAuth otomatik olarak rastgele bir code_verifier ve code_challenge oluşturur.
-3- OAuth, kullanıcıyı yetkilendirme sunucusuna oluşturduğu bu iki değer ile yönlendirir.
-4- Kullanıcı oturum açma seçeneklerinden birini kullanarak kimlik doğrulaması yapar. OAuth'un bu kullanıcıya hangi izinleri verdiğinin listesini görüntüleyebileceği bir sayfa görür. 
-5- OAuth, code_challenge'ı depolar ve kullanıcıyı yetkilendirme koduyla uygulamaya geri yönlendirir. 
-6- En başta oluşturulan code_verifier' yetkilendirme sunucusuna gönderir.
-7- Yetkilendirme sunucusu oluşturulan değerleri doğrular. 
+1- Kullanıcı Oturum açar. <br>
+2- OAuth otomatik olarak rastgele bir code_verifier ve code_challenge oluşturur.<br>
+3- OAuth, kullanıcıyı yetkilendirme sunucusuna oluşturduğu bu iki değer ile yönlendirir.<br>
+4- Kullanıcı oturum açma seçeneklerinden birini kullanarak kimlik doğrulaması yapar. OAuth'un bu kullanıcıya hangi izinleri verdiğinin listesini görüntüleyebileceği bir sayfa görür. <br>
+5- OAuth, code_challenge'ı depolar ve kullanıcıyı yetkilendirme koduyla uygulamaya geri yönlendirir.<br> 
+6- En başta oluşturulan code_verifier' yetkilendirme sunucusuna gönderir. <br>
+7- Yetkilendirme sunucusu oluşturulan değerleri doğrular. <br>
 
 ![Screenshot_2](https://github.com/denizbineklioglu/TurkcellGY/assets/76698070/63b2da8b-96b5-41ba-9867-24b39e23eb79)
